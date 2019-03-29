@@ -9,7 +9,7 @@ public class UserTaskRepositoryTest extends BaseSpringBootTest {
     @Autowired
     private UserTaskRepository userTaskRepository;
 
-    @Test
+    @Test(expected = Exception.class)
     public void listUserTask() throws Exception {
         UserTaskPO userTaskPO = new UserTaskPO();
         userTaskRepository.listUserTask(userTaskPO);
