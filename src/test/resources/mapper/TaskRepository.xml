@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mysocials.service.task.mybatistest.TaskRepository">
-    <resultMap id="BaseRM" type="com.mysocials.service.task.mybatistest.TaskPO">
+<mapper namespace="framework.mybatistest.TaskRepository">
+    <resultMap id="BaseRM" type="framework.mybatistest.TaskPO">
         <id column="ID" property="id"/>
         <result column="NAME" property="name"/>
         <result column="STATUS" property="status"/>
@@ -11,7 +11,7 @@
         ID,NAME,STATUS
     </sql>
 
-    <select id="findTask" parameterType="com.mysocials.service.task.mybatistest.TaskPO" resultMap="BaseRM">
+    <select id="findTask" parameterType="framework.mybatistest.TaskPO" resultMap="BaseRM">
         SELECT
         <include refid="BaseColumn"/>
         FROM TASK WHERE 1=1

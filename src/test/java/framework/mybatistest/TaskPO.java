@@ -1,4 +1,4 @@
-package com.mysocials.service.task.mybatistest;
+package framework.mybatistest;
 
 public class TaskPO {
     private Integer id;

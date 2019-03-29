@@ -1,4 +1,4 @@
-package com.mysocials.service.task.amqptest;
+package framework.amqptest;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +14,6 @@ public class TestMQService {
     }
 
     public void sendMsg() {
-        this.amqpTemplate.convertAndSend(RabbitConfig.USER_BEHAVIOR_EXCHANGE, RabbitConfig.USER_BEHAVIOR_QUEUE, "zzzz");
+        this.amqpTemplate.convertAndSend(TestRabbitConfig.USER_BEHAVIOR_EXCHANGE, TestRabbitConfig.USER_BEHAVIOR_QUEUE, "zzzz");
     }
 }

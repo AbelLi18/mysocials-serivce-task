@@ -1,8 +1,8 @@
-package com.mysocials.service.task.mybatistest.test;
+package framework.mybatistest.test;
 
 import com.mysocials.service.task.BaseSpringBootTest;
-import com.mysocials.service.task.mybatistest.TaskPO;
-import com.mysocials.service.task.mybatistest.TaskRepository;
+import framework.mybatistest.TaskPO;
+import framework.mybatistest.TaskRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

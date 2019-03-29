@@ -1,7 +1,7 @@
-package com.mysocials.service.task.amqptest.test;
+package framework.amqptest.test;
 
 import com.mysocials.service.task.BaseSpringBootTest;
-import com.mysocials.service.task.amqptest.TestMQService;
+import framework.amqptest.TestMQService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
